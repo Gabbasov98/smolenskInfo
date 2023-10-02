@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Результаты поиска</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <button class="burger">
+                        <img src="img/burger.svg" alt="Меню">
+                    </button>
+
+                    <a href="" class="header__logo">
+                        <img src="img/logo.svg" alt="Логотип">
+                    </a>
+
+                    <div class="menu">
+                        <div class="menu__top">
+                            <button class="_close-menu menu__close">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4" d="M11 1L1 11M1 1L11 11" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <nav class="nav">
+                            <a href="" class="nav__link">
+                                <span>Карта</span>
+                            </a>
+                            <div class="nav__item">
+                                <div class="nav__show">
+                                    <span>Коллективы</span>
+                                    <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.6" d="M3.64645 4.85355C3.84171 5.04882 4.15829 5.04882 4.35355 4.85355L7.53553 1.67157C7.7308 1.47631 7.7308 1.15973 7.53553 0.964466C7.34027 0.769204 7.02369 0.769204 6.82843 0.964466L4 3.79289L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.64645 4.85355ZM3.5 3.5L3.5 4.5L4.5 4.5L4.5 3.5L3.5 3.5Z" fill="#1A1A1A" />
+                                    </svg>
+                                </div>
+                                <div class="nav__hidden">
+                                    <div class="nav__hidden-inner">
+                                        <a href="" class="nav__sublink"><span>Ансамбли русской песни</span></a>
+                                        <a href="" class="nav__sublink"><span>Фольклорные ансамбли</span></a>
+                                        <a href="" class="nav__sublink"><span>Хоровые коллективы</span></a>
+                                        <a href="" class="nav__sublink"><span>Эстрадные коллективы</span></a>
+                                        <a href="" class="nav__sublink"><span>Коллективы народного танца</span></a>
+                                        <a href="" class="nav__sublink"><span>Коллективы эстрадного и современного танца</span></a>
+                                        <a href="" class="nav__sublink"><span>Коллективы спортивно-бального танца</span></a>
+                                        <a href="" class="nav__sublink"><span>Инструментальные ансамбли</span></a>
+                                        <a href="" class="nav__sublink"><span>Оркестры народных инструментов</span></a>
+                                        <a href="" class="nav__sublink"><span>Оркестры и ансамбли духовых и эстрадно-джазовых инструментов</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="nav__link">
+                                <span>Мастера</span>
+                            </a>
+                            <a href="" class="nav__link">
+                                <span>Календарь</span>
+                            </a>
+                            <a href="" class="nav__link">
+                                <span>Новости</span>
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="menu__bg _close-menu _backdrop"></div>
+
+
+                    <div class="header-search">
+                        <fieldset class="header-search__field">
+                            <input type="text" placeholder="Введите фразу для поиска">
+                        </fieldset>
+                        <button class="header-search__toggle m-btn-gray">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 17L13 13M1 8C1 8.91925 1.18106 9.82951 1.53284 10.6788C1.88463 11.5281 2.40024 12.2997 3.05025 12.9497C3.70026 13.5998 4.47194 14.1154 5.32122 14.4672C6.1705 14.8189 7.08075 15 8 15C8.91925 15 9.82951 14.8189 10.6788 14.4672C11.5281 14.1154 12.2997 13.5998 12.9497 12.9497C13.5998 12.2997 14.1154 11.5281 14.4672 10.6788C14.8189 9.82951 15 8.91925 15 8C15 7.08075 14.8189 6.1705 14.4672 5.32122C14.1154 4.47194 13.5998 3.70026 12.9497 3.05025C12.2997 2.40024 11.5281 1.88463 10.6788 1.53284C9.82951 1.18106 8.91925 1 8 1C7.08075 1 6.1705 1.18106 5.32122 1.53284C4.47194 1.88463 3.70026 2.40024 3.05025 3.05025C2.40024 3.70026 1.88463 4.47194 1.53284 5.32122C1.18106 6.1705 1 7.08075 1 8Z" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+
+                        <div class="header-search__dropdown">
+                            <div class="header-search__items">
+                                <div class="search-card">
+                                    <div class="text13">
+                                        Объекты нематериального культурного наследия
+                                    </div>
+                                    <div class="text19 bold-text">
+                                        Известные свадебные обряды
+                                    </div>
+                                    <div class="search-card__nav">
+                                        <a href="" class="arrow-link">
+                                            <span>Подробнее</span>
+                                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.35355 4.85355C4.54882 4.65829 4.54882 4.34171 4.35355 4.14645L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.29289 4.5L0.464466 7.32843C0.269204 7.52369 0.269204 7.84027 0.464466 8.03553C0.659728 8.2308 0.976311 8.2308 1.17157 8.03553L4.35355 4.85355ZM3 5H4V4H3V5Z" fill="#D9272D" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="search-card">
+                                    <div class="text13">
+                                        Творческие коллективы
+                                    </div>
+                                    <div class="text19 bold-text">
+                                        Постановка древнего обряда от ансамбля “Канарейка”
+                                    </div>
+                                    <div class="search-card__nav">
+                                        <a href="" class="arrow-link">
+                                            <span>Подробнее</span>
+                                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.35355 4.85355C4.54882 4.65829 4.54882 4.34171 4.35355 4.14645L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.29289 4.5L0.464466 7.32843C0.269204 7.52369 0.269204 7.84027 0.464466 8.03553C0.659728 8.2308 0.976311 8.2308 1.17157 8.03553L4.35355 4.85355ZM3 5H4V4H3V5Z" fill="#D9272D" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="search-card">
+                                    <div class="text13">
+                                        Объекты нематериального культурного наследия
+                                    </div>
+                                    <div class="text19 bold-text">
+                                        Известные свадебные обряды
+                                    </div>
+                                    <div class="search-card__nav">
+                                        <a href="" class="arrow-link">
+                                            <span>Подробнее</span>
+                                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.35355 4.85355C4.54882 4.65829 4.54882 4.34171 4.35355 4.14645L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.29289 4.5L0.464466 7.32843C0.269204 7.52369 0.269204 7.84027 0.464466 8.03553C0.659728 8.2308 0.976311 8.2308 1.17157 8.03553L4.35355 4.85355ZM3 5H4V4H3V5Z" fill="#D9272D" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="search-card">
+                                    <div class="text13">
+                                        Объекты нематериального культурного наследия
+                                    </div>
+                                    <div class="text19 bold-text">
+                                        Известные свадебные обряды
+                                    </div>
+                                    <div class="search-card__nav">
+                                        <a href="" class="arrow-link">
+                                            <span>Подробнее</span>
+                                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.35355 4.85355C4.54882 4.65829 4.54882 4.34171 4.35355 4.14645L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.29289 4.5L0.464466 7.32843C0.269204 7.52369 0.269204 7.84027 0.464466 8.03553C0.659728 8.2308 0.976311 8.2308 1.17157 8.03553L4.35355 4.85355ZM3 5H4V4H3V5Z" fill="#D9272D" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <a href="" class="header-search__link m-btn-gray">
+                                <span>Все результаты</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <section class="main2">
+                <div class="container">
+                    <div class="main2__inner">
+                        <div class="breadcrumbs">
+                            <a href="" class="breadcrumbs__item">
+                                <span>Главная</span>
+                            </a>
+                            <div class="breadcrumbs__item">
+                                <span>
+                                    Результаты поиска
+                                </span>
+                            </div>
+                        </div>
+                        <h1 class="text55 bold-text">
+                            Поиск по запросу “обряд”
+                        </h1>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="search">
+                <div class="container">
+                    <div class="main-search">
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Поиск по объектам культурного наследия" data-placeholder="Поиск по объектам культурного наследия" data-placeholder2="Поиск">
+                        </fieldset>
+                        <button class="main-search__btn">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 17L13 13M1 8C1 8.91925 1.18106 9.82951 1.53284 10.6788C1.88463 11.5281 2.40024 12.2997 3.05025 12.9497C3.70026 13.5998 4.47194 14.1154 5.32122 14.4672C6.1705 14.8189 7.08075 15 8 15C8.91925 15 9.82951 14.8189 10.6788 14.4672C11.5281 14.1154 12.2997 13.5998 12.9497 12.9497C13.5998 12.2997 14.1154 11.5281 14.4672 10.6788C14.8189 9.82951 15 8.91925 15 8C15 7.08075 14.8189 6.1705 14.4672 5.32122C14.1154 4.47194 13.5998 3.70026 12.9497 3.05025C12.2997 2.40024 11.5281 1.88463 10.6788 1.53284C9.82951 1.18106 8.91925 1 8 1C7.08075 1 6.1705 1.18106 5.32122 1.53284C4.47194 1.88463 3.70026 2.40024 3.05025 3.05025C2.40024 3.70026 1.88463 4.47194 1.53284 5.32122C1.18106 6.1705 1 7.08075 1 8Z" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="search__links">
+                        <a href="" class="search__link _active">
+                            <span class="search__link-title">Везде</span>
+                            <span class="search__link-num">17</span>
+                        </a>
+                        <a href="" class="search__link">
+                            <span class="search__link-title">Творческие коллективы</span>
+                            <span class="search__link-num">33</span>
+                        </a>
+                        <a href="" class="search__link">
+                            <span class="search__link-title">Мастера</span>
+                            <span class="search__link-num">35</span>
+                        </a>
+                        <a href="" class="search__link">
+                            <span class="search__link-title">Народные праздники</span>
+                            <span class="search__link-num">12</span>
+                        </a>
+                        <a href="" class="search__link">
+                            <span class="search__link-title">Новости</span>
+                            <span class="search__link-num">1</span>
+                        </a>
+                        <a href="" class="search__link">
+                            <span class="search__link-title">Рецепты</span>
+                            <span class="search__link-num">7</span>
+                        </a>
+                    </div>
+
+
+                    <div class="search__items">
+                        <div class="search-card2">
+                            <div class="search-card2__badge">
+                                <span>Объекты нематериального культурного наследия</span>
+                            </div>
+                            <div class="text37 medium-text">
+                                Известные свадебные <span>обряды</span>
+                            </div>
+                            <div class="text16">
+                                Традиции сватовства в Смоленской губернии были очень разнообразными. В Смоленске бывали исключения, когда жених присоединялся к семье будущей жены в качестве работника или хозяина-распорядителя. Тогда в качестве сватов иногда выступали старшие родственники или крестные отцы. В таких случаях в смоленском крестьянском быту о невесте говорили «оженилась», а о женихе — «вышел замуж». Сейчас расскажем вам о традиционных свадебных <b>обрядах</b> Смоленской области.
+                            </div>
+                            <div class="search-card2__nav">
+                                <a href="" class="arrow-link">
+                                    <span>Подробнее</span>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.35355 4.85355C4.54882 4.65829 4.54882 4.34171 4.35355 4.14645L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.29289 4.5L0.464466 7.32843C0.269204 7.52369 0.269204 7.84027 0.464466 8.03553C0.659728 8.2308 0.976311 8.2308 1.17157 8.03553L4.35355 4.85355ZM3 5H4V4H3V5Z" fill="#D9272D" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="search-card2">
+                            <div class="search-card2__badge">
+                                <span>Объекты нематериального культурного наследия</span>
+                            </div>
+                            <div class="text37 medium-text">
+                                Известные свадебные <span>обряды</span>
+                            </div>
+                            <div class="text16">
+                                Традиции сватовства в Смоленской губернии были очень разнообразными. В Смоленске бывали исключения, когда жених присоединялся к семье будущей жены в качестве работника или хозяина-распорядителя. Тогда в качестве сватов иногда выступали старшие родственники или крестные отцы. В таких случаях в смоленском крестьянском быту о невесте говорили «оженилась», а о женихе — «вышел замуж». Сейчас расскажем вам о традиционных свадебных <b>обрядах</b> Смоленской области.
+                            </div>
+                            <div class="search-card2__nav">
+                                <a href="" class="arrow-link">
+                                    <span>Подробнее</span>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.35355 4.85355C4.54882 4.65829 4.54882 4.34171 4.35355 4.14645L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.29289 4.5L0.464466 7.32843C0.269204 7.52369 0.269204 7.84027 0.464466 8.03553C0.659728 8.2308 0.976311 8.2308 1.17157 8.03553L4.35355 4.85355ZM3 5H4V4H3V5Z" fill="#D9272D" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="search-card2">
+                            <div class="search-card2__badge">
+                                <span>Объекты нематериального культурного наследия</span>
+                            </div>
+                            <div class="text37 medium-text">
+                                Известные свадебные <span>обряды</span>
+                            </div>
+                            <div class="text16">
+                                Традиции сватовства в Смоленской губернии были очень разнообразными. В Смоленске бывали исключения, когда жених присоединялся к семье будущей жены в качестве работника или хозяина-распорядителя. Тогда в качестве сватов иногда выступали старшие родственники или крестные отцы. В таких случаях в смоленском крестьянском быту о невесте говорили «оженилась», а о женихе — «вышел замуж». Сейчас расскажем вам о традиционных свадебных <b>обрядах</b> Смоленской области.
+                            </div>
+                            <div class="search-card2__nav">
+                                <a href="" class="arrow-link">
+                                    <span>Подробнее</span>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.35355 4.85355C4.54882 4.65829 4.54882 4.34171 4.35355 4.14645L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.29289 4.5L0.464466 7.32843C0.269204 7.52369 0.269204 7.84027 0.464466 8.03553C0.659728 8.2308 0.976311 8.2308 1.17157 8.03553L4.35355 4.85355ZM3 5H4V4H3V5Z" fill="#D9272D" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="search-card2">
+                            <div class="search-card2__badge">
+                                <span>Объекты нематериального культурного наследия</span>
+                            </div>
+                            <div class="text37 medium-text">
+                                Известные свадебные <span>обряды</span>
+                            </div>
+                            <div class="text16">
+                                Традиции сватовства в Смоленской губернии были очень разнообразными. В Смоленске бывали исключения, когда жених присоединялся к семье будущей жены в качестве работника или хозяина-распорядителя. Тогда в качестве сватов иногда выступали старшие родственники или крестные отцы. В таких случаях в смоленском крестьянском быту о невесте говорили «оженилась», а о женихе — «вышел замуж». Сейчас расскажем вам о традиционных свадебных <b>обрядах</b> Смоленской области.
+                            </div>
+                            <div class="search-card2__nav">
+                                <a href="" class="arrow-link">
+                                    <span>Подробнее</span>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.35355 4.85355C4.54882 4.65829 4.54882 4.34171 4.35355 4.14645L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.29289 4.5L0.464466 7.32843C0.269204 7.52369 0.269204 7.84027 0.464466 8.03553C0.659728 8.2308 0.976311 8.2308 1.17157 8.03553L4.35355 4.85355ZM3 5H4V4H3V5Z" fill="#D9272D" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="search-card2">
+                            <div class="search-card2__badge">
+                                <span>Объекты нематериального культурного наследия</span>
+                            </div>
+                            <div class="text37 medium-text">
+                                Известные свадебные <span>обряды</span>
+                            </div>
+                            <div class="text16">
+                                Традиции сватовства в Смоленской губернии были очень разнообразными. В Смоленске бывали исключения, когда жених присоединялся к семье будущей жены в качестве работника или хозяина-распорядителя. Тогда в качестве сватов иногда выступали старшие родственники или крестные отцы. В таких случаях в смоленском крестьянском быту о невесте говорили «оженилась», а о женихе — «вышел замуж». Сейчас расскажем вам о традиционных свадебных <b>обрядах</b> Смоленской области.
+                            </div>
+                            <div class="search-card2__nav">
+                                <a href="" class="arrow-link">
+                                    <span>Подробнее</span>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.35355 4.85355C4.54882 4.65829 4.54882 4.34171 4.35355 4.14645L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.29289 4.5L0.464466 7.32843C0.269204 7.52369 0.269204 7.84027 0.464466 8.03553C0.659728 8.2308 0.976311 8.2308 1.17157 8.03553L4.35355 4.85355ZM3 5H4V4H3V5Z" fill="#D9272D" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="search-card2">
+                            <div class="search-card2__badge">
+                                <span>Объекты нематериального культурного наследия</span>
+                            </div>
+                            <div class="text37 medium-text">
+                                Известные свадебные <span>обряды</span>
+                            </div>
+                            <div class="text16">
+                                Традиции сватовства в Смоленской губернии были очень разнообразными. В Смоленске бывали исключения, когда жених присоединялся к семье будущей жены в качестве работника или хозяина-распорядителя. Тогда в качестве сватов иногда выступали старшие родственники или крестные отцы. В таких случаях в смоленском крестьянском быту о невесте говорили «оженилась», а о женихе — «вышел замуж». Сейчас расскажем вам о традиционных свадебных <b>обрядах</b> Смоленской области.
+                            </div>
+                            <div class="search-card2__nav">
+                                <a href="" class="arrow-link">
+                                    <span>Подробнее</span>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.35355 4.85355C4.54882 4.65829 4.54882 4.34171 4.35355 4.14645L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.29289 4.5L0.464466 7.32843C0.269204 7.52369 0.269204 7.84027 0.464466 8.03553C0.659728 8.2308 0.976311 8.2308 1.17157 8.03553L4.35355 4.85355ZM3 5H4V4H3V5Z" fill="#D9272D" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pagination">
+                        <div class="pagination__items">
+                            <a href="" class="pagination__item _btn">
+                                <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.54038 4.54038C0.286539 4.79422 0.286539 5.20578 0.54038 5.45962L4.67695 9.59619C4.9308 9.85003 5.34235 9.85003 5.59619 9.59619C5.85003 9.34235 5.85003 8.9308 5.59619 8.67696L1.91924 5L5.59619 1.32304C5.85003 1.0692 5.85003 0.657647 5.59619 0.403806C5.34235 0.149965 4.9308 0.149965 4.67695 0.403806L0.54038 4.54038ZM23 4.35L1 4.35V5.65L23 5.65V4.35Z" fill="#25282C" />
+                                </svg>
+                                <span class="text15">Назад</span>
+                            </a>
+                            <a href="" class="pagination__item">
+                                <span class="text15">1</span>
+                            </a>
+                            <a href="" class="pagination__item _active">
+                                <span class="text15">2</span>
+                            </a>
+                            <a href="" class="pagination__item">
+                                <span class="text15">3</span>
+                            </a>
+                            <a href="" class="pagination__item _hide-tablet">
+                                <span class="text15">4</span>
+                            </a>
+                            <a href="" class="pagination__item _hide-tablet">
+                                <span class="text15">5</span>
+                            </a>
+                            <a href="" class="pagination__item _hide-tablet">
+                                <span class="text15">...</span>
+                            </a>
+                            <a href="" class="pagination__item _hide-tablet">
+                                <span class="text15">231</span>
+                            </a>
+                            <a href="" class="pagination__item _btn">
+                                <span class="text15">Далее</span>
+                                <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.4596 4.54038C22.7135 4.79422 22.7135 5.20578 22.4596 5.45962L18.323 9.59619C18.0692 9.85003 17.6576 9.85003 17.4038 9.59619C17.15 9.34235 17.15 8.9308 17.4038 8.67696L21.0808 5L17.4038 1.32304C17.15 1.0692 17.15 0.657647 17.4038 0.403806C17.6576 0.149965 18.0692 0.149965 18.323 0.403806L22.4596 4.54038ZM0 4.35L22 4.35V5.65L0 5.65L0 4.35Z" fill="#25282C" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+        <footer class="footer">
+
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top__inner">
+                        <a href="" class="footer__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+
+                        <div class="footer__desc _hide-desktop">
+                            <div class="footer__desc-item">
+                                ГБУК «Смоленский областной центр народного творчества».
+                            </div>
+                            <div class="footer__desc-item">
+                                Нынешнее время заставляет нас снова и снова обращаться к истокам русской духовности и культуры, сохранять то, что накоплено, развивать достигнутое и непременно заглянуть в будущее.
+                            </div>
+                        </div>
+
+                        <nav class="footer-nav">
+                            <a href="" class="footer-nav__link">
+                                <span>Карта</span>
+                            </a>
+                            <a href="" class="footer-nav__link">
+                                <span>Коллективы</span>
+                            </a>
+                            <a href="" class="footer-nav__link">
+                                <span>Мастера</span>
+                            </a>
+                            <a href="" class="footer-nav__link">
+                                <span>Календарь</span>
+                            </a>
+                            <a href="" class="footer-nav__link">
+                                <span>Новости</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__inner">
+                        <div class="footer__info">
+                            <div class="footer__links">
+                                <div class="footer__c text14">
+                                    © 2023 - Смоленский областной центр народного творчества
+                                </div>
+                                <div class="footer__conf text14">
+                                    <a href="">Политика конфиденциальности</a>
+                                </div>
+                                <div class="footer__by text14">
+                                    Сайт разработан в студии <a href="">ReadyCode</a>
+                                </div>
+                            </div>
+
+                            <div class="footer__desc _hide-mob">
+                                <div class="footer__desc-item">
+                                    ГБУК «Смоленский областной центр народного творчества».
+                                </div>
+                                <div class="footer__desc-item">
+                                    Нынешнее время заставляет нас снова и снова обращаться к истокам русской духовности и культуры, сохранять то, что накоплено, развивать достигнутое и непременно заглянуть в будущее.
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="footer-subscribe">
+                            <div class="footer-subscribe__top">
+                                <div class="footer-subscribe__title">
+                                    Подпишитесь на новости
+                                </div>
+                                <div class="text16">
+                                    Только важные новости и анонсы у вас на почте.
+                                </div>
+                            </div>
+                            <div class="footer-subscribe__wrap">
+                                <fieldset class="fg">
+                                    <input type="text" placeholder="Введите email адрес">
+                                </fieldset>
+                                <button class="m-btn m-btn-red">
+                                    <span>Подписаться</span>
+                                </button>
+                            </div>
+                            <div class="m-check">
+                                <input type="checkbox">
+                                <label><span>Согласен с политикой конфиденциальности</span></label>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

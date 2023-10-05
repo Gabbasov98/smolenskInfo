@@ -8,8 +8,10 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
     <title>«Центр культуры» города Смоленска</title>
 </head>
+
 
 <body class="m-page">
     <div class="wrapper">
@@ -195,16 +197,6 @@
                 <div class="container">
                     <div class="objects__inner">
                         <div class="objects__content">
-                            <button class="chapter-menu-btn">
-                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.5 6.5H20.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M4.5 12.5H20.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M4.5 18.5H20.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <span>Открыть меню раздела</span>
-                            </button>
-
-
                             <div class="line-title">
                                 <div class="text37 medium-text">
                                     Описание
@@ -290,9 +282,53 @@
                                         </div>
                                     </div>
                                     <div class="contacts__map">
-                                        <div class="map2">
-                                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5afcc825c5ef33aba6d3ed74c18c8ebc13758c3c04e6ed7fbd4ffa29b182cb4f&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+                                        <div class="map2" id="map">
+
                                         </div>
+                                        <script type="text/javascript">
+                                            ymaps.ready(init);
+                                            let coord = [54.780579, 32.014897]
+
+
+
+                                            function init() {
+                                                let myMap = new ymaps.Map("map", {
+                                                    center: coord,
+                                                    zoom: 18,
+                                                    controls: []
+                                                });
+
+                                                myMap.behaviors.disable('scrollZoom');
+
+
+                                                let placeMark = new ymaps.Placemark(coord, {
+                                                    balloonContentHeader: ``,
+                                                    balloonContentBody: ``,
+                                                    balloonContentFooter: '',
+                                                    hintContent: '',
+                                                }, {
+                                                    iconLayout: 'default#image',
+                                                    iconImageHref: "img/mark.svg",
+                                                    iconImageSize: [60, 68],
+                                                    iconImageOffset: [0, -78]
+                                                });
+                                                myMap.geoObjects.add(placeMark);
+
+
+                                                myMap.balloon.open(coord, {
+                                                    content: `
+                                                    <div class="place-card">
+                                                        <div class="place-card__text">улица Нахимова, 17</div>
+                                                    </div>
+                                                    `,
+                                                }, {
+                                                    // Опция: не показываем кнопку закрытия.
+                                                    closeButton: false,
+
+                                                });
+
+                                            }
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -444,9 +480,9 @@
                                 </div>
                                 <div class="news-preview__items">
                                     <div class="preview-item">
-                                        <div class="text16 medium-text">
+                                        <a href="" class="text16 medium-text">
                                             Международная экологическая Премия «ЭкоМир»
-                                        </div>
+                                        </a>
                                         <div class="preview-item__date">
                                             <img src="img/clock.svg" alt="Часы">
                                             <span>12.08.2023</span>
@@ -454,9 +490,9 @@
                                     </div>
 
                                     <div class="preview-item">
-                                        <div class="text16 medium-text">
+                                        <a href="" class="text16 medium-text">
                                             Cамая масштабная проверка цифровой грамотности в России возвращается!
-                                        </div>
+                                        </a>
                                         <div class="preview-item__date">
                                             <img src="img/clock.svg" alt="Часы">
                                             <span>11.08.2023</span>
@@ -464,9 +500,9 @@
                                     </div>
 
                                     <div class="preview-item">
-                                        <div class="text16 medium-text">
+                                        <a href="" class="text16 medium-text">
                                             Мастера-керамисты в режиме реального времени создавали глиняные шедевры.
-                                        </div>
+                                        </a>
                                         <div class="preview-item__date">
                                             <img src="img/clock.svg" alt="Часы">
                                             <span>10.08.2023</span>
@@ -474,9 +510,9 @@
                                     </div>
 
                                     <div class="preview-item">
-                                        <div class="text16 medium-text">
+                                        <a href="" class="text16 medium-text">
                                             Вечер начался с разбора пьесы А.Н. Островского «Бешеные деньги».
-                                        </div>
+                                        </a>
                                         <div class="preview-item__date">
                                             <img src="img/clock.svg" alt="Часы">
                                             <span>8.08.2023</span>
@@ -484,9 +520,9 @@
                                     </div>
 
                                     <div class="preview-item">
-                                        <div class="text16 medium-text">
+                                        <a href="" class="text16 medium-text">
                                             Смоляне познакомились с брендами муниципальных образований
-                                        </div>
+                                        </a>
                                         <div class="preview-item__date">
                                             <img src="img/clock.svg" alt="Часы">
                                             <span>7.08.2023</span>
@@ -494,9 +530,9 @@
                                     </div>
 
                                     <div class="preview-item">
-                                        <div class="text16 medium-text">
+                                        <a href="" class="text16 medium-text">
                                             Смолянам представили Вышитую карту Смоленской области
-                                        </div>
+                                        </a>
                                         <div class="preview-item__date">
                                             <img src="img/clock.svg" alt="Часы">
                                             <span>6.08.2023</span>
@@ -504,9 +540,9 @@
                                     </div>
 
                                     <div class="preview-item">
-                                        <div class="text16 medium-text">
+                                        <a href="" class="text16 medium-text">
                                             Смоляне могут получить юридическую помощь дистанционно
-                                        </div>
+                                        </a>
                                         <div class="preview-item__date">
                                             <img src="img/clock.svg" alt="Часы">
                                             <span>30.07.2023</span>
@@ -514,9 +550,9 @@
                                     </div>
 
                                     <div class="preview-item">
-                                        <div class="text16 medium-text">
+                                        <a href="" class="text16 medium-text">
                                             Международная экологическая Премия «ЭкоМир»
-                                        </div>
+                                        </a>
                                         <div class="preview-item__date">
                                             <img src="img/clock.svg" alt="Часы">
                                             <span>24.06.2023</span>
